@@ -1,4 +1,13 @@
-header {
-  background-color: aqua;
-  height: 500px;
+.header {
+  background-color: rgb(213, 215, 240);
+  color: rgb(79, 151, 215);
+}
+
+.main {
+  background-color: rgb(245, 179, 236);
+  color: rgb(251, 251, 251);
+}
+
+.footer {
+  background-color: antiquewhite;
 }/*# sourceMappingURL=index.css.map */

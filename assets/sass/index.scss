@@ -1,4 +1,5 @@
-header {
-  background-color: aqua;
-  height: 500px;
-}
+@import "variables";
+@import "mixin";
+@import "components/header";
+@import "components/main";
+@import "components/footer";
