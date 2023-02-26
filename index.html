@@ -76,9 +76,93 @@
 
             <!-- Reviews -->
             <section class="reviews">
-              <div class="container">
-                <div class="row">
-                  <div class="col">Контент Отзывы</div>
+              <div
+                class="reviews__container d-flex justify-content-center mt-5"
+                style="background-color: rgba(173, 173, 173, 0.675)"
+              >
+                <div
+                  id="carouselExampleDark"
+                  class="carousel carousel-dark slide"
+                  style="width: 70%; height: 54vh"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div
+                      class="carousel-item active bg-light mt-5"
+                      style="width: 100%; height: 40vh"
+                      data-bs-interval="10000"
+                    >
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Клиент 1</h5>
+                        <p>Отзыв 1</p>
+                      </div>
+                    </div>
+                    <div
+                      class="carousel-item bg-light mt-5"
+                      style="width: 100%; height: 40vh"
+                      data-bs-interval="2000"
+                    >
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Клиент 2</h5>
+                        <p>Отзыв 2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="carousel-item bg-light mt-5"
+                      style="width: 100%; height: 40vh"
+                    >
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Клиент 3</h5>
+                        <p>Отзыв 3</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
                 </div>
               </div>
             </section>
@@ -117,21 +201,21 @@
               <div class="footer__info">
                 <div class="footer__info__company">
                   <div class="footer__case-img">
-                    <img src="/assets/footer/case.png" alt="case-icon" />
+                    <img src="/assets/img/footer/case.png" alt="case-icon" />
                   </div>
                   <p class="footer__title-text">ООО "Компания"</p>
                 </div>
 
                 <div class="footer__info__company">
                   <div class="footer__case-img">
-                    <img src="/assets/footer/case.png" alt="case-icon" />
+                    <img src="/assets/img/footer/case.png" alt="case-icon" />
                   </div>
                   <p class="footer__INN-text">ИНН 111111111</p>
                 </div>
 
                 <div class="footer__info__company">
                   <div class="footer__case-img">
-                    <img src="assets/footer/case.png" alt="case-icon" />
+                    <img src="assets/img/footer/case.png" alt="case-icon" />
                   </div>
                   <p class="footer__OGRN-text">ОГРН 111111111</p>
                 </div>
@@ -142,7 +226,10 @@
               <div class="footer__contacts">
                 <div class="footer__address">
                   <div class="footer__address-img">
-                    <img src="assets/footer/adress.png" alt="address-icon" />
+                    <img
+                      src="assets/img/footer/adress.png"
+                      alt="address-icon"
+                    />
                   </div>
                   <p class="footer__address-text">
                     ул. Донская, д. 29/9 стр. 1 <br />
@@ -152,7 +239,7 @@
 
                 <div class="footer__tel">
                   <div class="footer__tel-img">
-                    <img src="assets/footer/tel.png" alt="tel-icon" />
+                    <img src="assets/img/footer/tel.png" alt="tel-icon" />
                   </div>
 
                   <p class="footer__tel-text">+7 (900) 000 00 00</p>
@@ -160,7 +247,7 @@
 
                 <div class="footer__email">
                   <div class="footer__email-img">
-                    <img src="assets/footer/email.png" alt="email-icon" />
+                    <img src="assets/img/footer/email.png" alt="email-icon" />
                   </div>
 
                   <p class="footer__email-text">email@gmail.com</p>
@@ -174,24 +261,29 @@
                   <a class="footer__link__instagram" href="#"
                     ><img
                       class="footer__socials-instagram"
-                      src="assets/footer/insta.png"
+                      src="assets/img/footer/insta.png"
                       alt="instagram-icon"
                     />
+                    &#160;
                   </a>
 
                   <a class="footer__link__telegram" href="#"
                     ><img
                       class="footer__socials-telegram"
-                      src="assets/footer/telegram.png"
+                      src="assets/img/footer/telegram.png"
                       alt="telegram-icon"
-                  /></a>
+                    />
+                    &#160;
+                  </a>
 
                   <a class="footer__link__vk" href="#"
                     ><img
                       class="footer__socials-vk"
-                      src="assets/footer/vk.png"
+                      src="assets/img/footer/vk.png"
                       alt="vk-icon"
-                  /></a>
+                    />
+                    &#160;
+                  </a>
                 </div>
               </div>
 
