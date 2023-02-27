@@ -41,156 +41,291 @@
             <!-- Services -->
             <section class="services">
               <div class="container services__container">
-
-                <div class="row services__title-row  text-center">
-                  <h2 class="col-12">
-                   Услуги
-                  </h2>
+                <div class="row services__title-row text-center">
+                  <h2 class="col-12">Услуги</h2>
                 </div>
 
                 <!-- Раздел услуг 1 -->
 
                 <div class="row services__subtitle-row text-center">
-                  <h3 class="col-12 ">
-                    Заголовок 1
-                  </h3>
+                  <h3 class="col-12">Заголовок 1</h3>
                 </div>
 
                 <div class="row services__item-row">
-            
                   <!-- Услуга 1 -->
-                  <div  
+                  <div
                     class="services__item services__item_item-1 col-sm-12 col-md-4 col-lg-4"
-                  > 
-                  <div class="services__overlay"></div>
-                  <p class="services__item-name">Проверка объектов недвижимости на предмет рисков приобретения</p>
-                <button class="services__button" data-toggle="modal"
-                data-target="#services__modal-1"><a href="#">Подробнее</a></button>
-                </div>
+                  >
+                    <div class="services__overlay"></div>
+                    <img
+                      class="services__client-choice-icon"
+                      src="assets/icons/services/client-choice.png"
+                      alt="client-choice icon"
+                    />
+                    <p class="services__item-name">
+                      Проверка объектов недвижимости на предмет рисков
+                      приобретения
+                    </p>
+                    <form class="services__button-link" action="#">
+                      <button
+                        class="services__button"
+                        data-toggle="modal"
+                        data-target="#services__modal-1"
+                      >
+                        Подробнее
+                      </button>
+                    </form>
+                  </div>
 
-                <!-- Services__modal-1 -->
-    <div
-    class="modal fade"
-    id="services__modal-1"
-    tabindex="-1"
-    role="dialog"
-    aria-labelledby="services__modal-1-label"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="services__modal-1-label">Проверка объектов недвижимости на предмет рисков приобретения</h5>
-          <button
-            type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">Проверим бывших собственников, законность оснований перехода права собственности на объект к Продавцу, историю владения. Оценим юридические риски и вероятность отмены сделки.</div>
-        <div class="modal-footer">
-          
-          <button type="button" class="btn btn-success"> Перейти к услуге</button>
-        </div>
-      </div>
-    </div>
-  </div>
+                  <!-- Модальное окно к Услуге 1 -->
+                  <div
+                    class="modal fade"
+                    id="services__modal-1"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="services__modal-1-label"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="services__modal-1-label">
+                            Проверка объектов недвижимости на предмет рисков
+                            приобретения
+                          </h5>
+                          <button
+                            type="button"
+                            class="close modal__close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          Проверим бывших собственников, законность оснований
+                          перехода права собственности на объект к Продавцу,
+                          историю владения. Оценим юридические риски и
+                          вероятность отмены сделки.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-success">
+                            Перейти к услуге
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-
-  <!-- Услуга 2 -->
+                  <!-- Услуга 2 -->
                   <div
                     class="services__item services__item_item-2 col-sm-12 col-md-4 col-lg-4"
-                  ><div class="services__overlay"></div>
-                  <p class="services__item-name">Сопровождение процедуры участия в торгах по реализации недвижимого имущества</p>
-                <button class="services__button"><a href="#">Подробнее</a></button>
-                </div>
+                  >
+                    <div class="services__overlay"></div>
+                    <p class="services__item-name">
+                      Сопровождение процедуры участия в торгах по реализации
+                      недвижимого имущества
+                    </p>
+                    <form class="services__button-link" action="#">
+                      <button
+                        class="services__button"
+                        data-toggle="modal"
+                        data-target="#services__modal-2"
+                      >
+                        Подробнее
+                      </button>
+                    </form>
+                  </div>
 
-                 <!-- Услуга 3 -->
+                  <!-- Модальное окно к Услуге 2 -->
+                  <div
+                    class="modal fade"
+                    id="services__modal-2"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="services__modal-2-label"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="services__modal-2-label">
+                            Сопровождение процедуры участия в торгах по
+                            реализации недвижимого имущества
+                          </h5>
+                          <button
+                            type="button"
+                            class="close modal__close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          Мы аккредитованы на всех доступных электронных
+                          торговых площадках! Готовим заявку и документы для
+                          подачи, учувствуем от вашего лица в торгах в качестве
+                          посредника.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-success">
+                            Перейти к услуге
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Услуга 3 -->
                   <div
                     class="services__item services__item_item-3 col-sm-12 col-md-4 col-lg-4"
                   >
-                  <div class="services__overlay"></div>
-                  <p class="services__item-name">Cудебная защита и внесудебное урегулирование споров</p>
-                <button class="services__button"><a href="#">Подробнее</a></button></div>
-                </div>
+                    <div class="services__overlay"></div>
+                    <p class="services__item-name">
+                      Cудебная защита и внесудебное урегулирование споров
+                    </p>
+                    <form class="services__button-link" action="#">
+                      <button
+                        class="services__button"
+                        data-toggle="modal"
+                        data-target="#services__modal-3"
+                      >
+                        Подробнее
+                      </button>
+                    </form>
+                  </div>
 
+                  <!-- Модальное окно к Услуге 3 -->
+                  <div
+                    class="modal fade"
+                    id="services__modal-3"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="services__modal-3-label"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="services__modal-3-label">
+                            Cудебная защита и внесудебное урегулирование споров
+                          </h5>
+                          <button
+                            type="button"
+                            class="close modal__close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          Защитим Ваши права на недвижимость, если Вы
+                          собственник, арендодатель или арендатор.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-success">
+                            Перейти к услуге
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
                 <!-- Раздел услуг 2 -->
                 <div class="row services__subtitle-row text-center">
-                  <h3 class="col-12">
-                    Заголовок 2
-                  </h1>
+                  <h3 class="col-12">Заголовок 2</h3>
                 </div>
 
                 <div class="row services__item-row">
-
-                   <!-- Услуга 4 -->
+                  <!-- Услуга 4 -->
                   <div
                     class="services__item services__item_item-4 col-sm-12 row-cols-md-4 col-lg-4"
                   >
-                  <div class="services__overlay"></div>
-                  <p class="services__item-name">Сопровождение сделок купли-продажи недвижимости</p>
-                <button class="services__button"><a href="#">Подробнее</a></button></div>
+                    <div class="services__overlay"></div>
+                    <p class="services__item-name">
+                      Сопровождение сделок купли-продажи недвижимости
+                    </p>
+                    <form class="services__button-link" action="#">
+                      <button class="services__button">Подробнее</button>
+                    </form>
+                  </div>
 
-
-                <!-- Услуга 5 -->
+                  <!-- Услуга 5 -->
                   <div
                     class="services__item services__item_item-5 col-sm-12 col-md-4 col-lg-4"
                   >
-                  <div class="services__overlay"></div>
-                  <p class="services__item-name">Представление интересов при продаже вашей недвижимости с торгов</p>
-                <button class="services__button"><a href="#">Подробнее</a></button></div>
+                    <div class="services__overlay"></div>
+                    <p class="services__item-name">
+                      Представление интересов при продаже вашей недвижимости с
+                      торгов
+                    </p>
+                    <form class="services__button-link" action="#">
+                      <button class="services__button">Подробнее</button>
+                    </form>
+                  </div>
 
-                <!-- Услуга 6 -->
+                  <!-- Услуга 6 -->
                   <div
                     class="services__item services__item_item-6 col-sm-12 col-md-4 col-lg-4"
                   >
-                  <div class="services__overlay"></div>
-                  <p class="services__item-name">Защита интересов победителя торгов – нового собственника</p>
-                <button class="services__button"><a href="#">Подробнее</a></button></div>
-                </div>
+                    <div class="services__overlay"></div>
+                    <p class="services__item-name">
+                      Защита интересов победителя торгов – нового собственника
+                    </p>
+                    <form class="services__button-link" action="#">
+                      <button class="services__button">Подробнее</button>
+                    </form>
+                  </div>
 
+                  <!-- Раздел услуг 3 -->
+                  <div class="row services__subtitle-row text-center">
+                    <h3 class="col-12">Заголовок 3</h3>
+                  </div>
 
-                <!-- Раздел услуг 3 -->
-                <div class="row services__subtitle-row text-center">
-                  <h3 class="col-12">
-                    Заголовок 3
-                  </h3>
-                </div>
+                  <div class="row services__item-row">
+                    <!-- Услуга 7 -->
+                    <div
+                      class="services__item services__item_item-7 col-sm-12 col-md-4 col-lg-4"
+                    >
+                      <div class="services__overlay"></div>
+                      <p class="services__item-name">
+                        Правовое обеспечение юридических лиц, а также сделок по
+                        отчуждению долей
+                      </p>
+                      <form class="services__button-link" action="#">
+                        <button class="services__button">Подробнее</button>
+                      </form>
+                    </div>
 
-                <div class="row services__item-row ">
+                    <!-- Услуга 8 -->
+                    <div
+                      class="services__item services__item_item-8 col-sm-12 col-md-4 col-lg-4"
+                    >
+                      <div class="services__overlay"></div>
+                      <p class="services__item-name">
+                        Взыскание дебиторской задолженности
+                      </p>
+                      <form class="services__button-link" action="#">
+                        <button class="services__button">Подробнее</button>
+                      </form>
+                    </div>
 
-                  <!-- Услуга 7 -->
-                  <div
-                    class="services__item services__item_item-7 col-sm-12 col-md-4 col-lg-4"
-                  >
-                  <div class="services__overlay"></div>
-                  <p class="services__item-name">Правовое обеспечение юридических лиц, а также сделок по отчуждению долей </p>
-                <button class="services__button"><a href="#">Подробнее</a></button></div>
-
-                <!-- Услуга 8 -->
-                  <div
-                    class="services__item services__item_item-8 col-sm-12 col-md-4 col-lg-4"
-                  > <div class="services__overlay"></div>
-                  <p class="services__item-name">Взыскание дебиторской задолженности</p>
-                <button class="services__button"><a href="#">Подробнее</a></button>
-                  
-                </div>
-                <!-- Услуга 9 -->
-                  <div
-                    class="services__item services__item_item-9 col-sm-12 col-md-4 col-lg-4"
-                  >
-                <div class="services__overlay"></div>
-                  <p class="services__item-name">Сопровождение аренды</p>
-                <button class="services__button"><a href="#">Подробнее</a></button></div>
-
-                  
+                    <!-- Услуга 9 -->
+                    <div
+                      class="services__item services__item_item-9 col-sm-12 col-md-4 col-lg-4"
+                    >
+                      <div class="services__overlay"></div>
+                      <p class="services__item-name">Сопровождение аренды</p>
+                      <form class="services__button-link" action="#">
+                        <button class="services__button">Подробнее</button>
+                      </form>
+                    </div>
+                  </div>
                 </div>
               </div>
-              
             </section>
 
             <!-- Map -->
@@ -243,19 +378,19 @@
       </div>
     </div> -->
     <script
-    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"
-  ></script>
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

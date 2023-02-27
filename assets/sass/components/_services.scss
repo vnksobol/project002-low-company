@@ -93,7 +93,7 @@ $services__text-color: white ;
   }
 
 
-.services__button {
+.services__button-link {
     background-color: transparent;
     border: none;
     position: absolute;
@@ -105,7 +105,7 @@ $services__text-color: white ;
     transition: opacity .35s ease;
 }
 
-.services__button a {
+.services__button  {
     padding: 15px 40px; /* Отступ */
     text-align: center;
     background: black; /* Цвет кнопки */
@@ -116,7 +116,7 @@ $services__text-color: white ;
     border-radius: 20px;
   }
 
-  .services__item:hover .services__button {
+  .services__item:hover .services__button-link {
     opacity: 1;
   }
 
@@ -167,5 +167,23 @@ $services__text-color: white ;
     }
 
 
+// Модальное окно
 
+.modal__close {
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+
+}
  
+
+//  Иконка выбор клиентов
+.services__client-choice-icon {
+    filter: brightness(100%);
+}
+
+.services__item_item-1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
