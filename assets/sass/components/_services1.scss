@@ -1,0 +1,46 @@
+.services1 {
+display: grid;
+justify-items: center;
+}
+
+.services1__title {
+    margin: 2em 0;
+}
+
+.services1__content {
+    
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 80vw;
+    gap: 1em;
+
+}
+
+.services1__card {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight:400;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(128, 128, 128, 0.1);
+        border: transparent;
+        border-radius: 1em;
+        font-weight:600 ;
+    }  
+}
+
+.services1__icon {
+    padding: 1em;
+
+}
+
+.services1__text {
+    max-width: 80%;
+    text-align: center;
+}
+
