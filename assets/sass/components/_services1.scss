@@ -15,24 +15,19 @@ justify-items: center;
     max-width: 80vw;
     gap: 1em;
 
+    
+
+    @media screen and (max-width: 768px){
+    grid-template-rows: auto;            
+    grid-template-columns:auto;
+    }
+
+    @media screen and (min-width: 768px) and(max-width: 998px){
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        }
 }
 
-.services1__card {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-weight:400;
-
-    &:hover {
-        cursor: pointer;
-        background-color: rgba(128, 128, 128, 0.1);
-        border: transparent;
-        border-radius: 1em;
-        font-weight:600 ;
-    }  
-}
 
 .services1__icon {
     padding: 1em;
@@ -44,3 +39,73 @@ justify-items: center;
     text-align: center;
 }
 
+.services1__button {
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+// Вращение карточки
+
+
+.service1__card {
+    position: relative;
+    color: white;
+    -webkit-perspective: 1200;
+    perspective: 1200;
+    -moz-transform: perspective(1200px);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d; 
+    transform-style: preserve-3d;
+    cursor: pointer;
+    
+    }
+
+
+    .card__front{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    background-color: rgba(128, 128, 128,0.3);
+    color: black;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+    transition: transform .8s cubic-bezier(0.42,0,0.58,1);
+    backface-visibility: hidden;
+    border-radius: 20px;
+    }
+    
+    .card__back{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+    background-color: rgb(0, 128, 0);
+    transform: rotateY(-180deg);
+    transition: transform .8s cubic-bezier(0.42,0,0.58,1);
+    backface-visibility: hidden;
+    padding: 1.5em ;
+    border-radius: 20px;
+    font-size: 0.9em;
+    }
+
+    .service1__card:hover .card__back {
+    transform: rotateY(0deg);
+    z-index: 2;
+    }
+    .service1__card:hover .card__front {
+    transform: rotateY(180deg);
+    z-index: -1;
+    }
