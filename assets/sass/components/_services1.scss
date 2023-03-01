@@ -16,13 +16,15 @@
   gap: 1em;
 
   @media screen and (max-width: 576px) {
-    grid-template-rows: 1fr;
     grid-template-columns: 1fr;
   }
 
-  @media screen and (min-width: 576px) and (max-width: 998px) {
-    grid-template-rows: repeat(2, 1fr);
+  @media screen and (min-width: 576px) and (max-width: 992px) {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -44,7 +46,7 @@
 
 // Вращение карточки
 
-.service1__card {
+.services1__card {
   position: relative;
   color: white;
   -webkit-perspective: 1200;
@@ -54,9 +56,10 @@
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
   cursor: pointer;
+  height: 320px;
 }
 
-.card__front {
+.services1__card-front {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,7 +77,7 @@
   border-radius: 20px;
 }
 
-.card__back {
+.services1__card-back {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,11 +98,11 @@
   font-size: 0.9em;
 }
 
-.service1__card:hover .card__back {
+.services1__card:hover .services1__card-back {
   transform: rotateY(0deg);
   z-index: 2;
 }
-.service1__card:hover .card__front {
+.services1__card:hover .services1__card-front {
   transform: rotateY(180deg);
   z-index: -1;
 }

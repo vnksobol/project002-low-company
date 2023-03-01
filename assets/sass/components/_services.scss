@@ -101,6 +101,10 @@ $services__text-color: white;
   padding: 0 20px;
   font-size: 1.2em;
 
+  @media screen and (min-width: 249px) and (max-width: 576px) {
+    font-size: 0.9em;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 992px) {
     font-size: 1em;
   }
