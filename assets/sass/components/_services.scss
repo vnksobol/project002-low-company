@@ -9,7 +9,15 @@ $services__text-color: white;
 .services__container {
   display: grid;
   row-gap: 1.5em;
-  margin-bottom: 2em;
+  margin-bottom: 5em;
+}
+
+.services__title-row {
+  padding: 0;
+}
+
+.services__subtitle-row {
+  padding: 0;
 }
 
 .services__item {
