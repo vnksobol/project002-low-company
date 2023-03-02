@@ -1,0 +1,175 @@
+$about__text-color: rgb(0, 0, 0); 
+// $about__mark-color: rgb(255, 255, 255); 
+$about__color-accent: rgb(8, 8, 94); //убрать, если не будет ссылки
+$about__font-family: 'TildaSans', Arial, sans-serif;
+
+.about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color:  rgb(253, 253, 253);
+}
+
+.about__text-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: hidden; 
+    width: 50%;
+    height: auto;
+    padding-right: 5%;
+    padding-left: 20%;
+}
+
+.about__text-part__h {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-self: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.about__text-part__list {
+    display: grid;
+    direction: column;
+    justify-content: start;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    grid-template-columns: 12% 20vw;
+    grid-template-rows: repeat(4, auto);
+    row-gap: 2em;
+    background-color: rgb(255, 255, 255);//Удалить
+    grid-template-areas: 
+    "mk1 cnt1"
+    "mk2 cnt2"
+    "mk3 cnt3"
+    "mk4 cnt4";
+}
+
+.about__text-part__mark1 {
+    display: grid;
+    grid-area: mk1;
+    justify-content: stretch; 
+    align-self: start;
+}
+
+.about__text-part__mark2 {
+    grid-area: mk2;    
+}
+
+.about__text-part__mark3 {
+    grid-area: mk3;    
+}
+
+.about__text-part__mark4 {
+    grid-area: mk4;    
+}
+
+.about__text-part__content1 {
+    display: grid;
+    grid-area: cnt1;  
+}
+
+.about__text-part__content2 {
+    display: grid;
+    grid-area: cnt2;  
+}
+
+.about__text-part__content3 {
+    display: grid;
+    grid-area: cnt3; 
+}
+
+.about__text-part__content4 {
+    display: grid;
+    grid-area: cnt4;
+}
+
+.mk1, 
+.mk2, 
+.mk3 {
+
+}
+
+.cnt1,
+.cnt2,
+.cnt3,
+.cnt4 {
+    overflow: hidden; 
+} 
+
+.about__h3 {
+    font-size: 2em;
+    font-weight: 600;
+    color: $screen1__text-color;
+}
+
+.about__h6 {
+    font-size: 1.3em;
+    font-weight: 300;
+    color: $screen1__text-color;
+}
+
+.about__text {
+    font-size: 1.25em;
+    font-weight: 300;
+    color: $screen1__text-color;
+}
+
+.about__text-part__mark { //
+    width: 80%;
+    height: auto;
+}
+
+.about__link {
+    text-decoration: none;
+    color: $about__color-accent;
+    font-size: 1.25em;
+    font-weight: 700;
+    padding-top: 5em;
+    cursor: pointer;
+}
+
+.about__link:hover {
+    text-decoration: none;
+    color: $about__color-accent;
+}
+
+.about__img-part {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.about__img-part__img {
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0rem -18rem -13rem 0rem;  // crop
+    padding-right: -10em;
+}
+
+.screen1__button1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: rgb(50, 50, 50);
+    cursor: pointer;
+    height: 4em;
+    width: 9em; //увеличение шрифта - меняется ширина
+    background-color: white;
+    font-weight: 600;
+    color: $about__color-accent; // $screen1__text-color;
+    font-size: 1.2em; //увеличение шрифта - меняется ширина
+    box-shadow: 0px 2px 4px rgb(136, 141, 153);
+    border-radius: 10px;
+}
