@@ -1,7 +1,7 @@
 $about__text-color: rgb(0, 0, 0); 
 // $about__mark-color: rgb(255, 255, 255); 
-$about__color-accent: rgb(8, 8, 94); //убрать, если не будет ссылки
-$about__font-family: 'TildaSans', Arial, sans-serif;
+$about__color-accent: rgb(15, 3, 124); //убрать, если не будет ссылки
+$about__font-family: 'TildaSans', Arial, sans-serif; //не подключено!
 
 .about {
     display: flex;
@@ -10,7 +10,7 @@ $about__font-family: 'TildaSans', Arial, sans-serif;
     justify-content: center;
     width: 100%;
     height: auto;
-    background-color:  rgb(253, 253, 253);
+    background-color:  rgb(255, 255, 255);
 }
 
 .about__text-part {

@@ -1,7 +1,10 @@
-@import "variables";
-@import "mixin";
 @import "Normalize";
+@import "variables";
+@import "typography";
+@import "mixin";
 @import "components/header";
 @import "components/main";
 @import "components/footer";
 @import "components/main_container";
+@import "components/screen1";
+@import "components/about";
