@@ -1,8 +1,3 @@
-$about__text-color: rgb(0, 0, 0); 
-// $about__mark-color: rgb(255, 255, 255); 
-$about__color-accent: rgb(15, 3, 124); //убрать, если не будет ссылки
-$about__font-family: 'TildaSans', Arial, sans-serif; //не подключено!
-
 .about {
     display: flex;
     flex-direction: row;
@@ -10,7 +5,7 @@ $about__font-family: 'TildaSans', Arial, sans-serif; //не подключено
     justify-content: center;
     width: 100%;
     height: auto;
-    background-color:  rgb(255, 255, 255);
+    background-color:  rgb(253, 253, 253);
 }
 
 .about__text-part {
@@ -75,28 +70,38 @@ $about__font-family: 'TildaSans', Arial, sans-serif; //не подключено
 
 .about__text-part__content1 {
     display: grid;
-    grid-area: cnt1;  
+    grid-area: cnt1;
+    border-left: 5px solid $about__color-accent;
+    background-color: rgb(236, 234, 234);
+    padding-left: 1rem;
+    box-shadow: 0px 2px 4px $screen1__batton-shadow;  
 }
 
 .about__text-part__content2 {
     display: grid;
-    grid-area: cnt2;  
+    grid-area: cnt2;
+    border-left: 5px solid $about__color-accent;
+    background-color: rgb(236, 234, 234);
+    padding-left: 1rem;
+    box-shadow: 0px 2px 4px $screen1__batton-shadow;  
 }
 
 .about__text-part__content3 {
     display: grid;
-    grid-area: cnt3; 
+    grid-area: cnt3;
+    border-left: 5px solid $about__color-accent;
+    background-color: rgb(236, 234, 234);
+    padding-left: 1rem; 
+    box-shadow: 0px 2px 4px $screen1__batton-shadow;
 }
 
 .about__text-part__content4 {
     display: grid;
     grid-area: cnt4;
-}
-
-.mk1, 
-.mk2, 
-.mk3 {
-
+    border-left: 5px solid $about__color-accent;
+    background-color: rgb(236, 234, 234);
+    padding-left: 1rem;
+    box-shadow: 0px 2px 4px $screen1__batton-shadow;
 }
 
 .cnt1,
@@ -144,8 +149,8 @@ $about__font-family: 'TildaSans', Arial, sans-serif; //не подключено
 }
 
 .about__img-part {
-    display: flex;
-    flex-direction: row;
+    // display: flex;
+    // flex-direction: row;
     width: 50%;
 }
 
@@ -170,6 +175,222 @@ $about__font-family: 'TildaSans', Arial, sans-serif; //не подключено
     font-weight: 600;
     color: $about__color-accent; // $screen1__text-color;
     font-size: 1.2em; //увеличение шрифта - меняется ширина
-    box-shadow: 0px 2px 4px rgb(136, 141, 153);
+    box-shadow: 0px 2px 4px $screen1__batton-shadow;
     border-radius: 10px;
+}
+// .screen1__button1 {
+//     @include button {
+//     background-color: white;
+//     color: $about__color-accent; // $screen1__text-color;
+//     border: rgb(50, 50, 50);
+//     font-weight: 600;
+//     }
+// }
+
+
+
+
+
+/*Adative - Mobile 767*/
+
+@media screen and (min-width: 249px) and (max-width:767px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        background-color:  rgb(253, 253, 253);
+    }
+    
+    .about__text-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        overflow: hidden; 
+        width: 90%;
+        height: auto;
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+    
+    .about__text-part__h {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-self: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        padding: 2em 0em 2em;
+    }
+    
+    .about__text-part__list {
+        display: grid;
+        direction: column;
+        justify-content: start;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        grid-template-columns: 12% 85vw;
+        grid-template-rows: repeat(4, auto);
+        row-gap: 2em;
+        background-color: rgb(255, 255, 255);//Удалить
+        grid-template-areas: 
+        "mk1 cnt1"
+        "mk2 cnt2"
+        "mk3 cnt3"
+        "mk4 cnt4";
+        margin-top: 1em;
+    }
+    
+    .about__text-part__mark1 {
+        display: grid;
+        grid-area: mk1;
+        justify-content: stretch; 
+        align-self: start;
+    }
+    
+    .about__text-part__mark2 {
+        grid-area: mk2;    
+    }
+    
+    .about__text-part__mark3 {
+        grid-area: mk3;    
+    }
+    
+    .about__text-part__mark4 {
+        grid-area: mk4;    
+    }
+    
+    .about__text-part__content1 {
+        display: grid;
+        grid-area: cnt1;
+        border-left: 5px solid $about__color-accent;
+        background-color: rgb(236, 234, 234);
+        padding-left: 1rem;
+        box-shadow: 0px 2px 4px $screen1__batton-shadow;
+        overflow: hidden;
+        word-break: break-word;  
+    }
+    
+    .about__text-part__content2 {
+        display: grid;
+        grid-area: cnt2;
+        border-left: 5px solid $about__color-accent;
+        background-color: rgb(236, 234, 234);
+        padding-left: 1rem;
+        box-shadow: 0px 2px 4px $screen1__batton-shadow;
+        overflow: hidden; 
+        word-break: break-word; 
+    }
+    
+    .about__text-part__content3 {
+        display: grid;
+        grid-area: cnt3;
+        border-left: 5px solid $about__color-accent;
+        background-color: rgb(236, 234, 234);
+        padding-left: 1rem; 
+        box-shadow: 0px 2px 4px $screen1__batton-shadow;
+        word-break: break-word;
+    }
+    
+    .about__text-part__content4 {
+        display: grid;
+        grid-area: cnt4;
+        border-left: 5px solid $about__color-accent;
+        background-color: rgb(236, 234, 234);
+        padding-left: 1rem;
+        box-shadow: 0px 2px 4px $screen1__batton-shadow;
+        word-break: break-word;
+    }
+    
+    .cnt1,
+    .cnt2,
+    .cnt3,
+    .cnt4 {
+        overflow: hidden; 
+    } 
+    
+    .about__h3 {
+        font-size: 1.35em;
+        font-weight: 600;
+        color: $screen1__text-color;
+        text-align: center;
+    }
+    
+    .about__h6 {
+        font-size: 1.15em;
+        font-weight: 300;
+        color: $screen1__text-color;
+    }
+    
+    .about__text {
+        font-size: 1em;
+        font-weight: 300;
+        color: $screen1__text-color;
+    }
+    
+    .about__text-part__mark { //
+        width: 80%;
+        height: auto;
+    }
+    
+    .about__link {
+        text-decoration: none;
+        color: $about__color-accent;
+        font-size: 1.25em;
+        font-weight: 700;
+        padding-top: 5em;
+        cursor: pointer;
+    }
+    
+    .about__link:hover {
+        text-decoration: none;
+        color: $about__color-accent;
+    }
+    
+    .about__img-part {
+        // display: flex;
+        // flex-direction: row;
+        width: 100%;
+    }
+    
+    .about__img-part__img {
+        overflow: hidden;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0rem -18rem -13rem 0rem;  // crop
+        padding-right: -10em;
+    }
+    
+    .screen1__button1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: rgb(50, 50, 50);
+        cursor: pointer;
+        height: 3em;
+        width: 5.5em; //увеличение шрифта - меняется ширина
+        background-color: white;
+        font-weight: 600;
+        color: $about__color-accent; // $screen1__text-color;
+        font-size: 1em; //увеличение шрифта - меняется ширина
+        box-shadow: 0px 2px 4px $screen1__batton-shadow;
+        border-radius: 10px;
+    }
+    // .screen1__button1 {
+    //     @include button {
+    //     background-color: white;
+    //     color: $about__color-accent; // $screen1__text-color;
+    //     border: rgb(50, 50, 50);
+    //     font-weight: 600;
+    //     }
+    // }
+
+
 }
