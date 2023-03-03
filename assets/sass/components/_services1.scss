@@ -1,6 +1,8 @@
 .services1 {
   display: grid;
   justify-items: center;
+  background-color: rgb(220, 220, 220);
+  padding: 20px;
 }
 
 .services1__title {
@@ -10,6 +12,10 @@
 .services1__subtitle {
   text-align: center;
   margin: 0.8em 0;
+}
+
+.services1__subtitle-2 {
+  margin-top: 3.5em;
 }
 
 .services1__content {
@@ -42,7 +48,8 @@
 }
 
 .services1__button {
-  background-color: black;
+  background-color: rgb(184, 183, 153);
+  border: transparent;
   color: white;
   border-radius: 20px;
   padding: 10px 20px;
