@@ -11,7 +11,7 @@
 
   .footer__container {
     display: grid;
-    grid-template-columns: 5vh 5vh repeat(4, 1fr) 10vh;
+    grid-template-columns: 1vh 1vh repeat(4, 1fr) 15vh;
     grid-template-rows: auto 10vh 5vh;
     
   }
@@ -41,7 +41,7 @@
     gap: 20px;
   }
 
-  .footer__link {
+  .footer__link, .footer__link__1 {
     text-decoration: none;
     color: white;
     cursor: pointer;
@@ -96,5 +96,105 @@
     padding-top: 1vh;
   }
 
+  /* Mobile styles */
+
+ @media screen and (max-width: 767px) {
+
+  .footer__container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh 5vh;
+  }
+
+  .footer__logo {
+    display: none;
+  }
+
+  .footer__nav {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .footer__nav-list {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .footer__link {
+    display: none;
+  }
+
+  .footer__info {
+    display: none;
+  }
+
+  .footer__contacts {
+    display: none;
+  }
+
+  .footer__socials {
+    display: none;
+  }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__container {
+    display: grid;
+    grid-template-columns: 10vh repeat(3, 1fr) 10vh;
+    grid-template-rows: auto 5vh;
+  }
+
+  .footer__logo {
+    display: none;
+  }
+
+  .footer__nav {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .footer__info {
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .footer__contacts {
+    display: grid;
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+
+  .footer__socials {
+    display: grid;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    align-content: end;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1999px) {
+  
+  .footer__container {
+    display: grid;
+    grid-template-columns: 17vh 7vh repeat(4, 1fr) 20vh;
+    grid-template-rows: auto 10vh 5vh;
+  }
+  }
+
+  @media screen and (min-width: 2000px) {
+  
+    .footer__container {
+      display: grid;
+      grid-template-columns: 17vh 7vh repeat(4, 1fr) 20vh;
+      grid-template-rows: auto 10vh 5vh;
+      font-size: 1.5em;
+    }
+    }
+}
