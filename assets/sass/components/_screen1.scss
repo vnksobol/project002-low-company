@@ -24,6 +24,8 @@
 }
 
 .screen1__img-part {
+    display: flex;
+    align-self: center;
     width: 50%;
     background-color: rgb(251, 251, 251);
 }
@@ -65,21 +67,13 @@
     border: none;
     cursor: pointer;
     height: 4em;
-    width: 9em; //увеличение шрифта - меняется ширина
+    width: 9em;
     background-color: $screen1__color-accent;
     color: $screen1__text-color-button;
-    font-size: 1.2em; //увеличение шрифта - меняется ширина
+    font-size: 1.2em;
     box-shadow: 0px 2px 4px $screen1__batton-shadow;
     border-radius: 10px;
 }
-
-// .screen1__button {
-//     @include button {
-//     background-color: $screen1__color-accent;
-//     color: $screen1__text-color-button;
-//     border: none;
-//     }
-// }
 
 .screen1__link {
     text-decoration: none;
@@ -91,15 +85,15 @@
     width: 100%;
     max-width: 100%;
     height: auto;
-    margin: -8.5rem -18rem 0rem 0rem;  // crop
+    margin: -8.5rem -18rem 0rem 0rem;
 }
 
 
 
 
-/*Adative - Mobile 767*/
+//Adative - Mobile 767, Tablet 767-991
 
-@media screen and (min-width: 249px) and (max-width:767px) {
+@media screen and (min-width: 249px) and (max-width:991px) {
 
     .screen1 {
         display: flex;
@@ -122,6 +116,7 @@
         padding-right: 5%;
         padding-left: 4.5%;
         text-align: center;
+        margin-bottom: 8rem;
     }
     
     .screen1__h1 {
@@ -154,7 +149,6 @@
         border: none;
         height: 3.3em;
         width: 11em;
-        margin-bottom: 6rem;
     }
     
     .screen1__button {
@@ -163,22 +157,14 @@
         align-items: center;
         border: none;
         cursor: pointer;
-        height: 3em;
-        width: 5.5em; //увеличение шрифта - меняется ширина
+        height: 4.5em;
+        width: 8em;
         background-color: $screen1__color-accent;
         color: $screen1__text-color-button;
-        font-size: 1em; //увеличение шрифта - меняется ширина
+        font-size: 1em;
         box-shadow: 0px 2px 4px $screen1__batton-shadow;
         border-radius: 10px;
     }
-    
-    // .screen1__button {
-    //     @include button {
-    //     background-color: $screen1__color-accent;
-    //     color: $screen1__text-color-button;
-    //     border: none;
-    //     }
-    // }
     
     .screen1__link {
         text-decoration: none;
@@ -196,7 +182,7 @@
         width: 100%;
         max-width: 100%;
         height: auto;
-        margin: -8.5rem -18rem 0rem 0rem;  // crop
+        margin: -8.5rem -18rem 0rem 0rem;
     }
 
 }

@@ -16,8 +16,9 @@
     overflow: hidden; 
     width: 50%;
     height: auto;
-    padding-right: 5%;
-    padding-left: 20%;
+    padding-right: 2rem;
+    padding-left: 10%; //20%, если будут маркеры
+    padding-bottom: 2rem;
 }
 
 .about__text-part__h {
@@ -38,15 +39,18 @@
     width: 100%;
     height: auto;
     overflow: hidden;
-    grid-template-columns: 12% 20vw;
+    grid-template-columns: 12% 25vw; //20vw, если будут маркеры
     grid-template-rows: repeat(4, auto);
     row-gap: 2em;
-    background-color: rgb(255, 255, 255);//Удалить
+    background-color: rgb(255, 255, 255);
     grid-template-areas: 
     "mk1 cnt1"
     "mk2 cnt2"
     "mk3 cnt3"
     "mk4 cnt4";
+    margin-left: -12%; //оставить, если уберем маркеры, лучше убрать столбец гридов
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .about__text-part__mark1 {
@@ -74,6 +78,7 @@
     border-left: 5px solid $about__color-accent;
     background-color: rgb(236, 234, 234);
     padding-left: 1rem;
+    padding-right: 1rem;
     box-shadow: 0px 2px 4px $screen1__batton-shadow;  
 }
 
@@ -83,6 +88,7 @@
     border-left: 5px solid $about__color-accent;
     background-color: rgb(236, 234, 234);
     padding-left: 1rem;
+    padding-right: 1rem;
     box-shadow: 0px 2px 4px $screen1__batton-shadow;  
 }
 
@@ -92,6 +98,7 @@
     border-left: 5px solid $about__color-accent;
     background-color: rgb(236, 234, 234);
     padding-left: 1rem; 
+    padding-right: 1rem;
     box-shadow: 0px 2px 4px $screen1__batton-shadow;
 }
 
@@ -101,6 +108,7 @@
     border-left: 5px solid $about__color-accent;
     background-color: rgb(236, 234, 234);
     padding-left: 1rem;
+    padding-right: 1rem;
     box-shadow: 0px 2px 4px $screen1__batton-shadow;
 }
 
@@ -111,13 +119,13 @@
     overflow: hidden; 
 } 
 
-.about__h3 {
+.about__h2 {
     font-size: 2em;
     font-weight: 600;
     color: $screen1__text-color;
 }
 
-.about__h6 {
+.about__h3 {
     font-size: 1.3em;
     font-weight: 300;
     color: $screen1__text-color;
@@ -134,14 +142,6 @@
     height: auto;
 }
 
-.about__link {
-    text-decoration: none;
-    color: $about__color-accent;
-    font-size: 1.25em;
-    font-weight: 700;
-    padding-top: 5em;
-    cursor: pointer;
-}
 
 .about__link:hover {
     text-decoration: none;
@@ -149,9 +149,11 @@
 }
 
 .about__img-part {
-    // display: flex;
-    // flex-direction: row;
+    display: flex;
+    align-self: center;
     width: 50%;
+    vertical-align: middle;
+
 }
 
 .about__img-part__img {
@@ -159,41 +161,46 @@
     width: 100%;
     max-width: 100%;
     height: auto;
-    margin: 0rem -18rem -13rem 0rem;  // crop
     padding-right: -10em;
+    display: block;
+    margin: 0 auto;
 }
 
-.screen1__button1 {
+.about1__button-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    right: -40%;
+    margin-top: 3em;
+    border: none;
+    height: 3.3em;
+    width: 11em;
+}
+
+.about__button {
     display: flex;
     justify-content: center;
     align-items: center;
     border: rgb(50, 50, 50);
     cursor: pointer;
     height: 4em;
-    width: 9em; //увеличение шрифта - меняется ширина
+    width: 9em;
     background-color: white;
     font-weight: 600;
-    color: $about__color-accent; // $screen1__text-color;
-    font-size: 1.2em; //увеличение шрифта - меняется ширина
+    color: $about__color-accent;
+    font-size: 1.2em;
     box-shadow: 0px 2px 4px $screen1__batton-shadow;
     border-radius: 10px;
 }
-// .screen1__button1 {
-//     @include button {
-//     background-color: white;
-//     color: $about__color-accent; // $screen1__text-color;
-//     border: rgb(50, 50, 50);
-//     font-weight: 600;
-//     }
-// }
 
 
 
 
 
-/*Adative - Mobile 767*/
 
-@media screen and (min-width: 249px) and (max-width:767px) {
+//*Adative - Mobile 767, Tablet 767-991
+
+@media screen and (min-width: 249px) and (max-width:991px) {
     .about {
         display: flex;
         flex-direction: column;
@@ -210,10 +217,10 @@
         justify-content: space-evenly;
         flex-wrap: wrap;
         overflow: hidden; 
-        width: 90%;
+        width: 100%;
         height: auto;
-        padding-right: 0%;
-        padding-left: 0%;
+        padding-right: 5%;
+        padding-left: 5%;
     }
     
     .about__text-part__h {
@@ -238,13 +245,14 @@
         grid-template-columns: 12% 85vw;
         grid-template-rows: repeat(4, auto);
         row-gap: 2em;
-        background-color: rgb(255, 255, 255);//Удалить
+        background-color: rgb(255, 255, 255);
         grid-template-areas: 
         "mk1 cnt1"
         "mk2 cnt2"
         "mk3 cnt3"
         "mk4 cnt4";
-        margin-top: 1em;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
     
     .about__text-part__mark1 {
@@ -266,67 +274,55 @@
         grid-area: mk4;    
     }
     
-    .about__text-part__content1 {
-        display: grid;
-        grid-area: cnt1;
-        border-left: 5px solid $about__color-accent;
-        background-color: rgb(236, 234, 234);
-        padding-left: 1rem;
-        box-shadow: 0px 2px 4px $screen1__batton-shadow;
-        overflow: hidden;
-        word-break: break-word;  
-    }
-    
-    .about__text-part__content2 {
-        display: grid;
-        grid-area: cnt2;
-        border-left: 5px solid $about__color-accent;
-        background-color: rgb(236, 234, 234);
-        padding-left: 1rem;
-        box-shadow: 0px 2px 4px $screen1__batton-shadow;
-        overflow: hidden; 
-        word-break: break-word; 
-    }
-    
-    .about__text-part__content3 {
-        display: grid;
-        grid-area: cnt3;
-        border-left: 5px solid $about__color-accent;
-        background-color: rgb(236, 234, 234);
-        padding-left: 1rem; 
-        box-shadow: 0px 2px 4px $screen1__batton-shadow;
-        word-break: break-word;
-    }
-    
-    .about__text-part__content4 {
-        display: grid;
-        grid-area: cnt4;
-        border-left: 5px solid $about__color-accent;
-        background-color: rgb(236, 234, 234);
-        padding-left: 1rem;
-        box-shadow: 0px 2px 4px $screen1__batton-shadow;
-        word-break: break-word;
-    }
     
     .cnt1,
     .cnt2,
     .cnt3,
     .cnt4 {
+        display: grid;
         overflow: hidden; 
+        background-color: rgb(236, 234, 234);
+        width: 100%;
+        height: auto;
+        border-left: 5px solid $about__color-accent;
+        box-shadow: 0px 2px 4px $screen1__batton-shadow;
+        word-break: break-word;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: 0 auto;
+        position: absolute;
+        box-sizing: content-box;
     } 
     
-    .about__h3 {
+    .about__text-part__content1 {
+        grid-area: cnt1;
+    }
+    
+    .about__text-part__content2 {
+        grid-area: cnt2;
+    }
+    
+    .about__text-part__content3 {
+        grid-area: cnt3;
+    }
+    
+    .about__text-part__content4 {
+        grid-area: cnt4;
+    }
+    
+    .about__h2 {
         font-size: 1.35em;
         font-weight: 600;
         color: $screen1__text-color;
         text-align: center;
     }
     
-    .about__h6 {
+    .about__h3 {
         font-size: 1.15em;
         font-weight: 300;
         color: $screen1__text-color;
     }
+    
     
     .about__text {
         font-size: 1em;
@@ -344,9 +340,8 @@
         color: $about__color-accent;
         font-size: 1.25em;
         font-weight: 700;
-        padding-top: 5em;
         cursor: pointer;
-    }
+        }
     
     .about__link:hover {
         text-decoration: none;
@@ -354,8 +349,6 @@
     }
     
     .about__img-part {
-        // display: flex;
-        // flex-direction: row;
         width: 100%;
     }
     
@@ -364,33 +357,34 @@
         width: 100%;
         max-width: 100%;
         height: auto;
-        margin: 0rem -18rem -13rem 0rem;  // crop
         padding-right: -10em;
     }
     
-    .screen1__button1 {
+    .about1__button-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        bottom: 2em;
+        right: -40%;
+        margin-top: 3em;
+        border: none;
+        height: 3.3em;
+        width: 11em;
+    }
+
+    .about__button {
         display: flex;
         justify-content: center;
         align-items: center;
         border: rgb(50, 50, 50);
         cursor: pointer;
-        height: 3em;
-        width: 5.5em; //увеличение шрифта - меняется ширина
+        height: 4.5em;
+        width: 8em;
         background-color: white;
         font-weight: 600;
-        color: $about__color-accent; // $screen1__text-color;
-        font-size: 1em; //увеличение шрифта - меняется ширина
+        color: $about__color-accent;
+        font-size: 1em; 
         box-shadow: 0px 2px 4px $screen1__batton-shadow;
         border-radius: 10px;
     }
-    // .screen1__button1 {
-    //     @include button {
-    //     background-color: white;
-    //     color: $about__color-accent; // $screen1__text-color;
-    //     border: rgb(50, 50, 50);
-    //     font-weight: 600;
-    //     }
-    // }
-
-
 }
