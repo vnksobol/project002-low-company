@@ -1,188 +1,186 @@
 .screen1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+}
+
+.screen1__text-part {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: 50%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  align-self: center;
+  padding-right: 5%;
+  padding-left: 4.5%;
+  padding-bottom: 2em;
+}
+
+.screen1__img-part {
+  display: flex;
+  align-self: center;
+  width: 50%;
+  background-color: rgb(251, 251, 251);
+}
+
+.screen1__h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: $screen1__text-color;
+}
+
+.screen1__h1-underline {
+  //убрать это или подчеркивание
+  text-decoration: underline;
+}
+
+.screen1__h1-color {
+  //убрать это или подчеркивание
+  color: $screen1__text-color-accent;
+}
+
+.screen1__text {
+  font-size: 1.25em;
+  font-weight: 300;
+  color: $screen1__text-color;
+}
+
+.screen1__button-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  margin-top: 3em;
+  border: none;
+  height: 3.3em;
+  width: 11em;
+}
+
+.screen1__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  height: 4em;
+  width: 9em;
+  background-color: $screen1__color-accent;
+  color: $screen1__text-color-button;
+  font-size: 1.2em;
+  box-shadow: 0px 2px 4px $screen1__batton-shadow;
+  border-radius: 10px;
+}
+
+.screen1__link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.screen1__img {
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: -8.5rem -18rem 0rem 0rem;
+}
+
+//Adative - Mobile 767, Tablet 767-991
+
+@media screen and (min-width: 249px) and (max-width: 991px) {
+  .screen1 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     height: auto;
-    background-color: rgb(255, 255, 255); 
-}
+    background-color: rgb(255, 255, 255);
+  }
 
-.screen1__text-part {
+  .screen1__text-part {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    overflow: hidden; 
-    width: 50%;
-    height: auto;
-    background-color: rgb(255, 255, 255); 
+    overflow: hidden;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
     justify-content: center;
-    align-self: center;
     padding-right: 5%;
     padding-left: 4.5%;
-    padding-bottom: 2em;
-}
+    text-align: center;
+    margin-bottom: 8rem;
+  }
 
-.screen1__img-part {
-    display: flex;
-    align-self: center;
-    width: 50%;
-    background-color: rgb(251, 251, 251);
-}
-
-.screen1__h1 {
-    font-size: 2.5em;
+  .screen1__h1 {
+    font-size: 1.5em;
     font-weight: 600;
     color: $screen1__text-color;
-}
+  }
 
-.screen1__h1-underline { //убрать это или подчеркивание
+  .screen1__h1-underline {
+    //убрать это или подчеркивание
     text-decoration: underline;
-}
+  }
 
-.screen1__h1-color { //убрать это или подчеркивание
+  .screen1__h1-color {
+    //убрать это или подчеркивание
     color: $screen1__text-color-accent;
-}
+  }
 
-.screen1__text {
-    font-size: 1.25em;
+  .screen1__text {
+    font-size: 1em;
     font-weight: 300;
     color: $screen1__text-color;
-}
+  }
 
-.screen1__button-wrapper {
+  .screen1__button-wrapper {
     display: flex;
     justify-content: flex-start;
     position: relative;
+    bottom: 2em;
+    right: -40%;
     margin-top: 3em;
     border: none;
     height: 3.3em;
     width: 11em;
-}
+  }
 
-.screen1__button {
+  .screen1__button {
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
     cursor: pointer;
-    height: 4em;
-    width: 9em;
+    height: 4.5em;
+    width: 8em;
     background-color: $screen1__color-accent;
     color: $screen1__text-color-button;
-    font-size: 1.2em;
+    font-size: 1em;
     box-shadow: 0px 2px 4px $screen1__batton-shadow;
     border-radius: 10px;
-}
+  }
 
-.screen1__link {
+  .screen1__link {
     text-decoration: none;
     cursor: pointer;
-}
+  }
 
-.screen1__img {
+  .screen1__img-part {
+    width: 100%;
+    background-color: rgb(251, 251, 251);
+  }
+
+  .screen1__img {
     overflow: hidden;
     width: 100%;
     max-width: 100%;
     height: auto;
     margin: -8.5rem -18rem 0rem 0rem;
-}
-
-
-
-
-//Adative - Mobile 767, Tablet 767-991
-
-@media screen and (min-width: 249px) and (max-width:991px) {
-
-    .screen1 {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        background-color: rgb(255, 255, 255); 
-    }
-    
-    .screen1__text-part {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        overflow: hidden; 
-        width: 90%;
-        background-color: rgb(255, 255, 255); 
-        justify-content: center;
-        padding-right: 5%;
-        padding-left: 4.5%;
-        text-align: center;
-        margin-bottom: 8rem;
-    }
-    
-    .screen1__h1 {
-        font-size: 1.5em;
-        font-weight: 600;
-        color: $screen1__text-color;
-    }
-    
-    .screen1__h1-underline { //убрать это или подчеркивание
-        text-decoration: underline;
-    }
-    
-    .screen1__h1-color { //убрать это или подчеркивание
-        color: $screen1__text-color-accent;
-    }
-    
-    .screen1__text {
-        font-size: 1em;
-        font-weight: 300;
-        color: $screen1__text-color;
-    }
-    
-    .screen1__button-wrapper {
-        display: flex;
-        justify-content: flex-start;
-        position: relative;
-        bottom: 2em;
-        right: -40%;
-        margin-top: 3em;
-        border: none;
-        height: 3.3em;
-        width: 11em;
-    }
-    
-    .screen1__button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: none;
-        cursor: pointer;
-        height: 4.5em;
-        width: 8em;
-        background-color: $screen1__color-accent;
-        color: $screen1__text-color-button;
-        font-size: 1em;
-        box-shadow: 0px 2px 4px $screen1__batton-shadow;
-        border-radius: 10px;
-    }
-    
-    .screen1__link {
-        text-decoration: none;
-        cursor: pointer;
-    }
-    
-        
-    .screen1__img-part {
-        width: 100%;
-        background-color: rgb(251, 251, 251);
-    }
-    
-    .screen1__img {
-        overflow: hidden;
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        margin: -8.5rem -18rem 0rem 0rem;
-    }
-
+  }
 }
