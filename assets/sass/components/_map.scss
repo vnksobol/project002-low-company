@@ -1,0 +1,109 @@
+.map {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: $background-color-2;
+}
+
+.map__map-part {
+    display: flex;
+    // flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 50%;
+    height: auto;
+    background-color: $background-color-2;
+}
+
+.map__address-part {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: center;
+    width: 50%;
+    height: auto;
+    background-color: $background-color-2;
+}
+
+.map__title {
+    font-weight: 600;
+    color: $screen1__text-color;
+    margin-bottom: 1rem;
+}
+
+.map__adress-part__item-color{
+    color: $map__text-color-accent;
+}
+
+.map__adress-part__item-accent1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $map__text-color-accent;
+}
+
+.map__adress-part__item-accent2 {
+    font-size: 3,9rem;
+    font-weight: 600;
+    color: $map__text-color-accent;
+}
+
+
+
+//*Adative - Mobile 767, Tablet 767-991
+
+@media screen and (min-width: 249px) and (max-width:991px) {
+    .map {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        background-color: $background-color-2;
+    }
+    
+    .map__map-part {
+        display: flex;
+        // flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+        height: auto;
+        max-height: 990px;
+        background-color: $background-color-2;
+    }
+    
+    .map__address-part {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        align-content: center;
+        width: 100%;
+        height: auto;
+        background-color: $background-color-2;
+        padding: 2rem 0rem 2rem;
+    }
+    
+    .map__adress-part__item-color{
+        color: $map__text-color-accent;
+    }
+    
+    .map__adress-part__item-accent1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $map__text-color-accent;
+    }
+    
+    .map__adress-part__item-accent2 {
+        font-size: 3,9rem;
+        font-weight: 600;
+        color: $map__text-color-accent;
+    }   
+}

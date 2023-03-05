@@ -1,0 +1,13 @@
+.consform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+    overflow: hidden; 
+    height: auto;
+    min-height: 300rem;
+    padding-bottom: 2rem;
+    margin: auto;
+}
