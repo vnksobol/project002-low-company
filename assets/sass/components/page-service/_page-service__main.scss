@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   max-width: 100vw;
-  overflow: hidden;
+  height: fit-content;
 }
 
 .service {
@@ -19,8 +19,10 @@
 .service__info {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  gap: 1em;
 
-  @media screen and (min-width: 249px) and (max-width: 768px) {
+  @media screen and (min-width: 249px) and (max-width: 992px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,29 +31,38 @@
 }
 
 .service__img-part {
-  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 50%;
 
-  @media screen and (min-width: 249px) and (max-width: 768px) {
+  @media screen and (min-width: 249px) and (max-width: 992px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 90%;
+  }
+}
+
+.service__img {
+  max-width: 100%;
+
+  @media screen and (min-width: 992px) {
     width: 100%;
+    height: 100%;
+    float: left;
   }
 }
 
 .service__text-part {
-  width: 70%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 
-  @media screen and (min-width: 249px) and (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  @media screen and (min-width: 249px) and (max-width: 992px) {
     align-items: center;
-    width: 100%;
+    width: 90%;
   }
 }
 
