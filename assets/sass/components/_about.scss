@@ -17,7 +17,7 @@
     width: 50%;
     height: auto;
     padding-right: 2rem;
-    padding-left: 10%; //20%, если будут маркеры
+    padding-left: 10%;
     padding-bottom: 2rem;
 }
 
@@ -39,77 +39,57 @@
     width: 100%;
     height: auto;
     overflow: hidden;
-    grid-template-columns: 12% 25vw; //20vw, если будут маркеры
+    grid-template-columns: 98vw;
     grid-template-rows: repeat(4, auto);
     row-gap: 2em;
     background-color: rgb(255, 255, 255);
     grid-template-areas: 
-    "mk1 cnt1"
-    "mk2 cnt2"
-    "mk3 cnt3"
-    "mk4 cnt4";
-    margin-left: -12%; //оставить, если уберем маркеры, лучше убрать столбец гридов
+    "cnt1"
+    "cnt2"
+    "cnt3"
+    "cnt4";
     margin-top: 2rem;
     margin-bottom: 2rem;
-}
-
-.about__text-part__mark1 {
-    display: grid;
-    grid-area: mk1;
-    justify-content: stretch; 
-    align-self: start;
-}
-
-.about__text-part__mark2 {
-    grid-area: mk2;    
-}
-
-.about__text-part__mark3 {
-    grid-area: mk3;    
-}
-
-.about__text-part__mark4 {
-    grid-area: mk4;    
 }
 
 .about__text-part__content1 {
     display: grid;
     grid-area: cnt1;
-    border-left: 5px solid $about__color-accent;
+    border-left: 5px solid $text-color-accent;
     background-color: rgb(236, 234, 234);
     padding-left: 1rem;
     padding-right: 1rem;
-    box-shadow: 0px 2px 4px $screen1__batton-shadow;  
+    box-shadow: 0px 2px 4px $button-shadow;  
 }
 
 .about__text-part__content2 {
     display: grid;
     grid-area: cnt2;
-    border-left: 5px solid $about__color-accent;
+    border-left: 5px solid $text-color-accent;
     background-color: rgb(236, 234, 234);
     padding-left: 1rem;
     padding-right: 1rem;
-    box-shadow: 0px 2px 4px $screen1__batton-shadow;  
+    box-shadow: 0px 2px 4px $batton-shadow;  
 }
 
 .about__text-part__content3 {
     display: grid;
     grid-area: cnt3;
-    border-left: 5px solid $about__color-accent;
+    border-left: 5px solid $text-color-accent;
     background-color: rgb(236, 234, 234);
     padding-left: 1rem; 
     padding-right: 1rem;
-    box-shadow: 0px 2px 4px $screen1__batton-shadow;
+    box-shadow: 0px 2px 4px $button-shadow;
 }
 
 .about__text-part__content4 {
     display: grid;
     grid-area: cnt4;
-    border-left: 5px solid $about__color-accent;
+    border-left: 5px solid $text-color-accent;
     background-color: rgb(236, 234, 234);
     padding-left: 1rem;
     padding-right: 1rem;
-    box-shadow: 0px 2px 4px $screen1__batton-shadow;
+    box-shadow: 0px 2px 4px $button-shadow;
 }
 
 .cnt1,
@@ -122,30 +102,24 @@
 .about__h2 {
     font-size: 2em;
     font-weight: 600;
-    color: $screen1__text-color;
+    color: $text-color;
 }
 
 .about__h3 {
     font-size: 1.3em;
     font-weight: 300;
-    color: $screen1__text-color;
+    color: $text-color;
 }
 
 .about__text {
     font-size: 1.25em;
     font-weight: 300;
-    color: $screen1__text-color;
+    color: $text-color;
 }
-
-.about__text-part__mark { //
-    width: 80%;
-    height: auto;
-}
-
 
 .about__link:hover {
     text-decoration: none;
-    color: $about__color-accent;
+    color: $color-accent;
 }
 
 .about__img-part {
@@ -161,39 +135,36 @@
     width: 100%;
     max-width: 100%;
     height: auto;
-    padding-right: -10em;
     display: block;
     margin: 0 auto;
 }
 
-.about1__button-wrapper {
-    display: flex;
-    justify-content: flex-start;
-    position: relative;
-    right: -40%;
-    margin-top: 3em;
-    border: none;
-    height: 3.3em;
-    width: 11em;
-}
+// .about__button-wrapper {
+//     display: flex;
+//     justify-content: flex-start;
+//     // position: relative;
+//     // right: -40%;
+//     margin-top: 3em;
+//     border: none;
+//     height: 3.3em;
+//     width: 11em;
+// }
 
-.about__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: rgb(50, 50, 50);
-    cursor: pointer;
-    height: 4em;
-    width: 9em;
-    background-color: white;
-    font-weight: 600;
-    color: $about__color-accent;
-    font-size: 1.2em;
-    box-shadow: 0px 2px 4px $screen1__batton-shadow;
-    border-radius: 10px;
-}
-
-
+// .about__button {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     cursor: pointer;
+//     height: 4em;
+//     width: 9em;
+//     // border-radius: 10px;
+//     // border: rgb(50, 50, 50);
+//     background-color: $button-bg;
+//     color: $text-color-button;
+//     font-weight: 600;
+//     font-size: 1.2em;
+//     box-shadow: 0px 2px 4px $button-shadow;
+// }
 
 
 
@@ -242,38 +213,18 @@
         width: 100%;
         height: auto;
         overflow: hidden;
-        grid-template-columns: 12% 85vw;
+        grid-template-columns: 100%;
         grid-template-rows: repeat(4, auto);
         row-gap: 2em;
         background-color: rgb(255, 255, 255);
         grid-template-areas: 
-        "mk1 cnt1"
-        "mk2 cnt2"
-        "mk3 cnt3"
-        "mk4 cnt4";
+        "cnt1"
+        "cnt2"
+        "cnt3"
+        "cnt4";
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
-    
-    .about__text-part__mark1 {
-        display: grid;
-        grid-area: mk1;
-        justify-content: stretch; 
-        align-self: start;
-    }
-    
-    .about__text-part__mark2 {
-        grid-area: mk2;    
-    }
-    
-    .about__text-part__mark3 {
-        grid-area: mk3;    
-    }
-    
-    .about__text-part__mark4 {
-        grid-area: mk4;    
-    }
-    
     
     .cnt1,
     .cnt2,
@@ -282,10 +233,10 @@
         display: grid;
         overflow: hidden; 
         background-color: rgb(236, 234, 234);
-        width: 100%;
+        width: 98%;
         height: auto;
-        border-left: 5px solid $about__color-accent;
-        box-shadow: 0px 2px 4px $screen1__batton-shadow;
+        border-left: 5px solid $color-accent;
+        box-shadow: 0px 2px 4px $button-shadow;
         word-break: break-word;
         padding-left: 1rem;
         padding-right: 1rem;
@@ -313,31 +264,26 @@
     .about__h2 {
         font-size: 1.35em;
         font-weight: 600;
-        color: $screen1__text-color;
+        color: $text-color;
         text-align: center;
     }
     
     .about__h3 {
         font-size: 1.15em;
         font-weight: 300;
-        color: $screen1__text-color;
+        color: $text-color;
     }
     
     
     .about__text {
-        font-size: 1em;
+        font-size: 0.5em;
         font-weight: 300;
-        color: $screen1__text-color;
-    }
-    
-    .about__text-part__mark { //
-        width: 80%;
-        height: auto;
+        color: $text-color;
     }
     
     .about__link {
         text-decoration: none;
-        color: $about__color-accent;
+        color: $color-accent;
         font-size: 1.25em;
         font-weight: 700;
         cursor: pointer;
@@ -345,7 +291,7 @@
     
     .about__link:hover {
         text-decoration: none;
-        color: $about__color-accent;
+        color: $color-accent;
     }
     
     .about__img-part {
@@ -360,31 +306,31 @@
         padding-right: -10em;
     }
     
-    .about1__button-wrapper {
-        display: flex;
-        justify-content: flex-start;
-        position: relative;
-        bottom: 2em;
-        right: -40%;
-        margin-top: 3em;
-        border: none;
-        height: 3.3em;
-        width: 11em;
-    }
+    // .about__button-wrapper {
+    //     display: flex;
+    //     justify-content: flex-start;
+    //     // position: relative;
+    //     // right: -40%;
+    //     bottom: 2em;
+    //     margin-top: 3em;
+    //     border: none;
+    //     height: 3.3em;
+    //     width: 11em;
+    // }
 
-    .about__button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: rgb(50, 50, 50);
-        cursor: pointer;
-        height: 4.5em;
-        width: 8em;
-        background-color: white;
-        font-weight: 600;
-        color: $about__color-accent;
-        font-size: 1em; 
-        box-shadow: 0px 2px 4px $screen1__batton-shadow;
-        border-radius: 10px;
-    }
+    // .about__button {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     cursor: pointer;
+    //     height: 4em;
+    //     width: 8em;
+    //     background-color: $button-bg;
+    //     color: $text-color-button;
+        // border-radius: 10px;
+        // border: rgb(50, 50, 50);
+        // font-weight: 600;
+        // font-size: 1.2em;
+        // box-shadow: 0px 2px 4px $button-shadow;       
+    // }
 }
