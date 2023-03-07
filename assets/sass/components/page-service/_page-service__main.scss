@@ -86,6 +86,17 @@
   padding: 10px;
 }
 
+// Кнопка
+.service__button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.service__button:hover {
+  background-color: rgb(44, 85, 69);
+}
+
 //  Моб стили
 @media screen and (min-width: 249px) and (max-width: 767px) {
   .service {
