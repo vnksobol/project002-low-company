@@ -22,6 +22,12 @@
   font-size: 16px;
 }
 
+// Список услуг
+
+.service__list-item {
+  list-style: inside;
+}
+
 // Разделитель
 .service__divide-line {
   width: 50vw;
@@ -62,7 +68,7 @@
   font-weight: bold;
   padding: 10px;
   background-color: rgb(44, 85, 69);
-  border: 1px solid white;
+  border: 1px solid black;
   color: white;
 }
 
@@ -72,8 +78,39 @@
 }
 
 .service__table td {
+  text-align: center;
+}
+
+.service__table td {
   border: 1px solid rgb(44, 85, 69);
   padding: 10px;
 }
 
 //  Моб стили
+@media screen and (min-width: 249px) and (max-width: 767px) {
+  .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+  }
+
+  .service__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+
+  .service__img-part {
+    display: flex;
+    justify-content: center;
+  }
+
+  .service__img {
+    display: none;
+  }
+}
