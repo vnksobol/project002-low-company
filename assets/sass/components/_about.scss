@@ -34,7 +34,6 @@
 
 .about__text-part__list {
   display: grid;
-  direction: column;
   justify-content: start;
   width: 100%;
   height: auto;
@@ -175,26 +174,6 @@
     padding: 2em 0em 2em;
   }
 
-  .about__text-part__list {
-    display: grid;
-    direction: column;
-    justify-content: start;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(4, auto);
-    row-gap: 2em;
-    background-color: rgb(255, 255, 255);
-    grid-template-areas:
-      "cnt1"
-      "cnt2"
-      "cnt3"
-      "cnt4";
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
   .about__text-part__content1,
   .about__text-part__content2,
   .about__text-part__content3,
@@ -271,6 +250,5 @@
     width: 100%;
     max-width: 100%;
     height: auto;
-    padding-right: -10em;
   }
 }
