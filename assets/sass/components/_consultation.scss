@@ -1,10 +1,8 @@
 .consultation {
-  display: flex;
-  justify-content: center;
   background-color: rgb(220, 220, 220, 0.5);
-}
 
-.consultation__confirmation {
-  text-align: center;
-  padding-top: 4vh;
+  .consultation__confirmation {
+    text-align: center;
+    padding-top: 4vh;
+  }
 }
