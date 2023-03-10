@@ -1,13 +1,47 @@
-.consform {
+.consult__form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-content: center;
-  align-self: center;
   flex-wrap: wrap;
   overflow: hidden;
   height: auto;
-  min-height: 300rem;
+  min-height: 30rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
-  margin: auto;
+  // margin: auto;
 }
+
+.consult__form-size {
+  width: 80%;
+  height: auto;
+  min-height: 55rem;
+ }
+
+
+
+//*Adative - Mobile 767, Tablet 767-991
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .consult__form-size {
+    width: 80%;
+    height: auto;
+    min-height: 65rem;
+   }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+ .consult__form-size {
+  width: 90%;
+  height: auto;
+  min-height: 68rem;
+ }
+}
+
+@media screen and (min-width: 249px) and (max-width: 575px) {
+  .consult__form-size {
+   width: 98%;
+   height: auto;
+   min-height: 73rem;
+  }
+ }
+ 
