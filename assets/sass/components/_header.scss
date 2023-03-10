@@ -94,6 +94,7 @@ nav a {
   border-top: 1px solid #cbcbcc;
   border-left: 1px solid #cbcbcc;
   border-right: 1px solid #cbcbcc;
+
   visibility: hidden;
   opacity: 0;
   transform-origin: 0% 0%;
@@ -101,14 +102,14 @@ nav a {
   transition: 0.3s linear;
 }
 .submenu div {
+  border-bottom: 1px solid #cbcbcc;
   position: relative;
-  width: max-content;
+  min-width: 400px;
 }
 .submenu div a {
   color: #282828;
   padding: 10px 20px;
   font-size: 13px;
-  border-bottom: 1px solid #cbcbcc;
 }
 .submenu .submenu {
   position: absolute;
