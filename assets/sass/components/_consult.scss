@@ -7,7 +7,6 @@
   height: auto;
   min-height: 30rem;
   padding-top: 2rem;
-  padding-bottom: 2rem;
   // margin: auto;
 }
 
@@ -15,9 +14,7 @@
   width: 80%;
   height: auto;
   min-height: 55rem;
- }
-
-
+}
 
 //*Adative - Mobile 767, Tablet 767-991
 
@@ -25,23 +22,22 @@
   .consult__form-size {
     width: 80%;
     height: auto;
-    min-height: 65rem;
-   }
+    min-height: 60rem;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
- .consult__form-size {
-  width: 90%;
-  height: auto;
-  min-height: 68rem;
- }
+  .consult__form-size {
+    width: 90%;
+    height: auto;
+    min-height: 60rem;
+  }
 }
 
 @media screen and (min-width: 249px) and (max-width: 575px) {
   .consult__form-size {
-   width: 98%;
-   height: auto;
-   min-height: 73rem;
+    width: 98%;
+    height: auto;
+    min-height: 70rem;
   }
- }
- 
+}

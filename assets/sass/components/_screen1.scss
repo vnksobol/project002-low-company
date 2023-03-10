@@ -84,8 +84,6 @@
   height: auto;
 }
 
-
-
 //Adative - Mobile 767, Tablet 767-991
 
 @media screen and (min-width: 249px) and (max-width: 991px) {
@@ -96,16 +94,16 @@
     justify-content: center;
     width: 100%;
     height: auto;
-    background-color: rgb(255, 255, 255); 
+    background-color: rgb(255, 255, 255);
   }
 
   .screen1__text-part {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    overflow: hidden; 
+    overflow: hidden;
     width: 100%;
-    background-color: rgb(255, 255, 255); 
+    background-color: rgb(255, 255, 255);
     align-content: center;
     padding-right: 5%;
     padding-left: 4.5%;
