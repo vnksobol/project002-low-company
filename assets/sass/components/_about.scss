@@ -11,91 +11,24 @@
 .about__text-part {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
   overflow: hidden;
   width: 50%;
   height: auto;
-  padding-right: 2rem;
-  padding-left: 10%;
-  padding-bottom: 2rem;
-}
-
-.about__text-part__h {
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  align-self: center;
-  flex-wrap: wrap;
-  width: 100%;
-  height: auto;
+  padding: 5% 8% 5% 10%;
   overflow: hidden;
 }
 
 .about__text-part__list {
-  display: grid;
-  justify-content: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: auto;
   overflow: hidden;
-  grid-template-columns: 98vw;
-  grid-template-rows: repeat(4, auto);
-  row-gap: 2em;
-  background-color: rgb(255, 255, 255);
-  grid-template-areas:
-    "cnt1"
-    "cnt2"
-    "cnt3"
-    "cnt4";
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.about__text-part__content1 {
-  display: grid;
-  grid-area: cnt1;
-  border-left: 5px solid $text-color-accent;
-  background-color: rgb(236, 234, 234);
-  padding-left: 1rem;
-  padding-right: 1rem;
-  box-shadow: 0px 2px 4px $button-shadow;
-}
-
-.about__text-part__content2 {
-  display: grid;
-  grid-area: cnt2;
-  border-left: 5px solid $text-color-accent;
-  background-color: rgb(236, 234, 234);
-  padding-left: 1rem;
-  padding-right: 1rem;
-  box-shadow: 0px 2px 4px $button-shadow;
-}
-
-.about__text-part__content3 {
-  display: grid;
-  grid-area: cnt3;
-  border-left: 5px solid $text-color-accent;
-  background-color: rgb(236, 234, 234);
-  padding-left: 1rem;
-  padding-right: 1rem;
-  box-shadow: 0px 2px 4px $button-shadow;
-}
-
-.about__text-part__content4 {
-  display: grid;
-  grid-area: cnt4;
-  border-left: 5px solid $text-color-accent;
-  background-color: rgb(236, 234, 234);
-  padding-left: 1rem;
-  padding-right: 1rem;
-  box-shadow: 0px 2px 4px $button-shadow;
-}
-
-.about__text-part__content1,
-.about__text-part__content2,
-.about__text-part__content3,
-.about__text-part__content4 {
-  overflow: hidden;
+  padding: 3rem 0rem 2rem;
+  row-gap: 2rem;
 }
 
 .about__h2 {
@@ -104,21 +37,24 @@
   color: $text-color;
 }
 
-.about__h3 {
+.about__text-moto {
   font-size: 1.3em;
   font-weight: 300;
   color: $text-color;
 }
 
 .about__text {
-  font-size: 1.25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.15rem;
   font-weight: 300;
   color: $text-color;
-}
-
-.about__link:hover {
-  text-decoration: none;
-  color: $text-color-accent;
+  border-left: 5px solid $text-color-accent;
+  background-color: $background-color-2;
+  padding: 0rem 1rem;
+  min-height: 5rem;
+  box-shadow: 0px 2px 4px $button-shadow;
 }
 
 .about__img-part {
@@ -149,106 +85,69 @@
     height: auto;
     background-color: rgb(253, 253, 253);
   }
-
+  
   .about__text-part {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     overflow: hidden;
     width: 100%;
     height: auto;
-    padding-right: 5%;
-    padding-left: 5%;
+    padding: 5% 8% 5% 10%;
+    overflow: hidden;
   }
-
-  .about__text-part__h {
+  
+  .about__text-part__list {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    align-self: center;
-    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
     height: auto;
     overflow: hidden;
-    padding: 2em 0em 2em;
+    padding: 3rem 0rem 2rem;
+    row-gap: 2rem;
   }
-
-  .about__text-part__content1,
-  .about__text-part__content2,
-  .about__text-part__content3,
-  .about__text-part__content4 {
-    display: grid;
-    overflow: hidden;
-    background-color: rgb(236, 234, 234);
-    width: 98%;
-    height: auto;
-    border-left: 5px solid $text-color-accent;
-    box-shadow: 0px 2px 4px $button-shadow;
-    word-break: break-word;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: 0 auto;
-    position: absolute;
-    box-sizing: content-box;
-  }
-
-  .about__text-part__content1 {
-    grid-area: cnt1;
-  }
-
-  .about__text-part__content2 {
-    grid-area: cnt2;
-  }
-
-  .about__text-part__content3 {
-    grid-area: cnt3;
-  }
-
-  .about__text-part__content4 {
-    grid-area: cnt4;
-  }
-
+  
   .about__h2 {
-    font-size: 1.35em;
+    font-size: 1.7rem;
     font-weight: 600;
     color: $text-color;
-    text-align: center;
   }
-
-  .about__h3 {
-    font-size: 1.15em;
+  
+  .about__text-moto {
+    font-size: 1.4rem;
     font-weight: 300;
     color: $text-color;
   }
-
+  
   .about__text {
-    font-size: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
     font-weight: 300;
     color: $text-color;
+    border-left: 5px solid $text-color-accent;
+    background-color: $background-color-2;
+    padding: 0rem 1rem;
+    min-height: 5rem;
+    box-shadow: 0px 2px 4px $button-shadow;
   }
-
-  .about__link {
-    text-decoration: none;
-    color: $text-color-accent;
-    font-size: 1.25em;
-    font-weight: 700;
-    cursor: pointer;
-  }
-
-  .about__link:hover {
-    text-decoration: none;
-    color: $text-color-accent;
-  }
-
+  
   .about__img-part {
+    display: flex;
+    align-self: flex-start;
     width: 100%;
+    vertical-align: middle;
   }
-
+  
   .about__img-part__img {
     overflow: hidden;
     width: 100%;
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
   }
 }

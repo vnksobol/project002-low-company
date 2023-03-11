@@ -6,6 +6,7 @@
   width: 100%;
   height: auto;
   background-color: rgb(255, 255, 255);
+  padding-bottom: 2em;
 }
 
 .screen1__text-part {
@@ -14,25 +15,26 @@
   flex-wrap: wrap;
   overflow: hidden;
   width: 50%;
+  height: auto;
   background-color: rgb(255, 255, 255);
   justify-content: center;
   padding-right: 5%;
   padding-left: 4.5%;
+  padding-bottom: 2em;
 }
 
 .screen1__img-part {
+  display: flex;
+  align-self: center;
   width: 50%;
+  overflow: hidden;
   background-color: rgb(251, 251, 251);
 }
 
 .screen1__h1 {
-  font-size: 2.3em;
+  font-size: 2.5em;
   font-weight: 600;
   color: $text-color;
-}
-
-.screen1__h1-underline {
-  text-decoration: underline;
 }
 
 .screen1__h1-color {
@@ -42,15 +44,17 @@
 .screen1__text {
   font-size: 1.25em;
   font-weight: 300;
+  color: $text-color;
 }
 
 .screen1__button-wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   position: relative;
   margin-top: 3em;
   border: none;
-  height: 3.3em;
+  height: 5.3em;
   width: 11em;
 }
 
@@ -61,17 +65,16 @@
   border: none;
   cursor: pointer;
   height: 4em;
-  width: 9em; //увеличение шрифта - меняется ширина
-  background-color: rgb(50, 50, 50);
+  width: 9em;
+  background-color: $button-bg;
   color: $text-color-button;
-  font-size: 1.2em; //увеличение шрифта - меняется ширина
-  box-shadow: 0px 2px 4px;
-  border-radius: 10px;
+  font-size: 1.2em;
+  box-shadow: 0px 2px 4px $button-shadow;
 }
 
-.screen1__link {
-  text-decoration: none;
-  cursor: pointer;
+.screen1__button:hover {
+  background-color: $text-color-accent;
+  color: $text-color-button;
 }
 
 .screen1__img {
@@ -79,4 +82,86 @@
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+//Adative - Mobile 767, Tablet 767-991
+
+@media screen and (min-width: 249px) and (max-width: 991px) {
+  .screen1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .screen1__text-part {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    align-content: center;
+    padding-right: 5%;
+    padding-left: 4.5%;
+  }
+
+  .screen1__img-part {
+    width: 100%;
+    // height: 1px;
+    // background-color: $background-color-2;
+  }
+
+  .screen1__h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $text-color;
+  }
+
+  .screen1__h1-color {
+    color: $text-color-accent;
+  }
+
+  .screen1__text {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: $text-color;
+  }
+
+  .screen1__button-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: none;
+    height: 5.3rem;
+    width: 11rem;
+  }
+
+  .screen1__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    height: 4rem;
+    width: 9rem;
+    background-color: rgb(50, 50, 50);
+    color: $text-color-button;
+    font-size: 1.2rem;
+    box-shadow: 0px 2px 4px $button-shadow;
+  }
+
+  .screen1__button:hover {
+    background-color: $text-color-accent;
+    color: $text-color-button;
+  }
+
+  .screen1__img {
+    display: none;
+  }
 }
