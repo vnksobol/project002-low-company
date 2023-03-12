@@ -3,18 +3,21 @@
   margin-bottom: 1.5em;
 }
 
-.header__company {
+.header__company,
+.mobile-header__company {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.header__logo {
+.header__logo,
+.mobile-header__logo {
   height: fit-content;
   width: 27%;
 }
 
-.header__company-name {
+.header__company-name,
+.mobile-header__company-name {
   display: flex;
   align-items: center;
   font-weight: 700;
