@@ -62,15 +62,15 @@ nav a {
   transition: 0.3s linear;
 }
 
-.topmenu > div {
+.header__topmenu > div {
   float: left;
   position: relative;
   font-weight: 400;
 }
-.topmenu > div:first-child {
+.header__topmenu > div:first-child {
   border-left: 0;
 }
-.topmenu > div > a {
+.header__topmenu > div > a {
   padding: 20px 30px;
   font-size: 15px;
   font-weight: 500;
@@ -79,15 +79,15 @@ nav a {
   letter-spacing: 2px;
 }
 
-.topmenu a:hover {
+.header__topmenu a:hover {
   text-decoration: underline;
 }
 
-.submenu a:hover {
+.header__submenu a:hover {
   color: #ddbe86;
 }
 
-.submenu {
+.header__submenu {
   position: absolute;
   z-index: 5;
   min-width: 200px;
@@ -102,23 +102,23 @@ nav a {
   transform: rotateX(-90deg);
   transition: 0.3s linear;
 }
-.submenu div {
+.header__submenu div {
   border-bottom: 1px solid #cbcbcc;
   position: relative;
   min-width: 400px;
 }
-.submenu div a {
+.header__submenu div a {
   color: #282828;
   padding: 10px 20px;
   font-size: 13px;
 }
-.submenu .submenu {
+.header__submenu .header__submenu {
   position: absolute;
   left: 25%;
   top: 100%;
   transition: 0.3s linear;
 }
-nav div:hover > .submenu {
+nav div:hover > .header__submenu {
   transform: rotateX(0deg);
   visibility: visible;
   opacity: 1;
