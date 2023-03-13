@@ -264,7 +264,7 @@
           <!-- Main part -->
           <main class="main">
             <!-- First screen -->
-            <section class="screen1">
+            <section class="screen1" id="screen1">
               <div class="screen1__text-part">
                 <h1 class="screen1__h1">
                   Поможем Вашей недвижимости
@@ -350,7 +350,7 @@
                     <p>
                       Мы аккредитованы на всех доступных электронных торговых
                       площадках! Готовим заявку и документы для подачи,
-                      учувствуем от Вашего лица в торгах в качестве посредника.
+                      участвуем от Вашего лица в торгах в качестве посредника.
                     </p>
                     <form class="services1__button-link" action="#">
                       <button class="services1__button">Получить услугу</button>
@@ -408,7 +408,7 @@
                       Формирование юридического отдела, подбор персонала,
                       определение компетенций юристов предприятия, разработка
                       должностных инструкций, оказание юридических услуг
-                      риэлторским организациям, Due Diligence при купле-продажи
+                      риэлторским организациям, Due Diligence при купле-продаже
                       долей юридических лиц.
                     </p>
                     <form class="services1__button-link" action="#">
@@ -428,7 +428,7 @@
                       />
                     </div>
                     <p class="services1__text">
-                      Сопровождение сделки по уступки права требования, в том
+                      Сопровождение сделки по уступке права требования, в том
                       числе по ДДУ
                     </p>
                   </div>
@@ -894,13 +894,15 @@
               <nav class="footer__nav">
                 <ul class="footer__nav-list">
                   <li>
-                    <a class="footer__link" href="№">Главная</a>
+                    <a class="footer__link" href="#screen1">Главная</a>
                   </li>
                   <li>
-                    <a class="footer__link-1" href="№">Услуги</a>
+                    <a class="footer__link-1" href="#services1">Услуги</a>
                   </li>
-                  <li><a class="footer__link-1" href="№">О нас</a></li>
-                  <li><a class="footer__link-1" href="#">Контакты</a></li>
+                  <li><a class="footer__link-1" href="#about">О нас</a></li>
+                  <li>
+                    <a class="footer__link-1" href="#contacts">Контакты</a>
+                  </li>
                 </ul>
               </nav>
 
@@ -953,7 +955,9 @@
                     <img src="assets/img/footer/tel.png" alt="tel-icon" />
                   </div>
 
-                  <p class="footer__tel-text">+7 (916) 110 56 88</p>
+                  <a class="footer__tel-text" href="tel:+79161105688">
+                    +7 (916) 110 56 88
+                  </a>
                 </div>
 
                 <!-- <div class="footer__email">
