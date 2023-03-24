@@ -1,6 +1,7 @@
 # Low company site
 
-![logo for readme](https://github.com/vnksobol/project002-low-company/blob/main/save-property.jpg?raw=true)
+![save-property](https://user-images.githubusercontent.com/119630640/227660648-3b412b72-58a9-4f50-913c-7d24c5bf8c14.jpg)
+
 
 ## Функционал сайта:
 
@@ -17,8 +18,9 @@
 
 <div> 
 <img alt="GitHub" src="https://img.shields.io/badge/-Github-black?style=for-the-badge&logo=github&logoColor=white" />
-<img alt="HTML" src="https://img.shields.io/badge/-HTML-orange" />
-<img alt="SASS" src="https://img.shields.io/badge/-SASS-pink" />
+<img alt="HTML" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
+<img alt="SASS" src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white" />
+<img alt="GitHub pages" src="https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white" />
 </div>
 
 ## Наша команда:
