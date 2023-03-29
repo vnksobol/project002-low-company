@@ -16,9 +16,6 @@
 
 ## Ссылка на сайт:
 <a alt="Link" href="https://vnksobol.github.io/project002-low-company">Save Property</a>
-
-## Ссылка на сайт:
-<a alt="Link" href="https://vnksobol.github.io/project002-low-company">Save Property</a>
 ## Использованные технологии:
 
 <div> 
